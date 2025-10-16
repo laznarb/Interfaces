@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .rojo {
+        border: 2px black solid;
+        background-color: red;
+    }
+
+    .blanco {
+        border: 2px black solid;
+    }
+
+    .azul {
+        border: 2px black solid;
+        background-color: blue;
+    }
+
+    .amarillo {
+        border: 2px black solid;
+        background-color: gold;
+    }
+
+    .verde {
+        border: 2px black solid;
+        background-color: green;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!--Primer row (Contiene el cuadrado rojo, tres columnas blancas y el cuadrado verde)-->
+        <div class="row">
+            <div class="col-3 rojo">r</div>
+            <div class="col-1 p-0">
+                <div class="col-12 blanco">a1</div>
+                <div class="col-12 blanco">a2</div>
+                <div class="col-12 blanco">a3</div>
+                <div class="col-12 blanco">a4</div>
+                <div class="col-12 blanco">a5</div>
+                <div class="col-12 blanco">a6</div>
+                <div class="col-12 blanco">a7</div>
+
+            </div>
+            <div class="col-1 p-0">
+                <div class="col-12 blanco">b1</div>
+                <div class="col-12 blanco">b2</div>
+                <div class="col-12 blanco">b3</div>
+                <div class="col-12 blanco">b4</div>
+                <div class="col-12 blanco">b5</div>
+                <div class="col-12 blanco">b6</div>
+                <div class="col-12 blanco">b7</div>
+            </div>
+            <div class="col-1 p-0">
+                <div class="col-12 blanco">c1</div>
+                <div class="col-12 blanco">c2</div>
+                <div class="col-12 blanco">c3</div>
+                <div class="col-12 blanco">c4</div>
+                <div class="col-12 blanco">c5</div>
+                <div class="col-12 blanco">c6</div>
+                <div class="col-12 blanco">c7</div>
+            </div>
+            <div class="col-3 verde">v</div>
+        </div>
+        <!--Segundo row (Contiene las tres fila de en medio del tablero)-->
+        <div class="row">
+            <div class="row">
+                <div class="col-3 d-flex p-0">
+                    <div class="col-2 blanco">a1</div>
+                    <div class="col-2 blanco">a2</div>
+                    <div class="col-2 blanco">a3</div>
+                    <div class="col-2 blanco">a4</div>
+                    <div class="col-2 blanco">a5</div>
+                    <div class="col-2 blanco">a6</div>
+                    <div class="col-2 blanco">a7</div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 d-flex p-0">
+                    <div class="col-2 blanco">a1</div>
+                    <div class="col-2 blanco">a2</div>
+                    <div class="col-2 blanco">a3</div>
+                    <div class="col-2 blanco">a4</div>
+                    <div class="col-2 blanco">a5</div>
+                    <div class="col-2 blanco">a6</div>
+                    <div class="col-2 blanco">a7</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex p-0">
+                    <div class="col-2 blanco">a1</div>
+                    <div class="col-2 blanco">a2</div>
+                    <div class="col-2 blanco">a3</div>
+                    <div class="col-2 blanco">a4</div>
+                    <div class="col-2 blanco">a5</div>
+                    <div class="col-2 blanco">a6</div>
+                    <div class="col-2 blanco">a7</div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 d-flex p-0">
+                    <div class="col-2 blanco">a1</div>
+                    <div class="col-2 blanco">a2</div>
+                    <div class="col-2 blanco">a3</div>
+                    <div class="col-2 blanco">a4</div>
+                    <div class="col-2 blanco">a5</div>
+                    <div class="col-2 blanco">a6</div>
+                    <div class="col-2 blanco">a7</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex p-0">
+                    <div class="col-2 blanco">a1</div>
+                    <div class="col-2 blanco">a2</div>
+                    <div class="col-2 blanco">a3</div>
+                    <div class="col-2 blanco">a4</div>
+                    <div class="col-2 blanco">a5</div>
+                    <div class="col-2 blanco">a6</div>
+                    <div class="col-2 blanco">a7</div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3 d-flex p-0">
+                    <div class="col-2 blanco">a1</div>
+                    <div class="col-2 blanco">a2</div>
+                    <div class="col-2 blanco">a3</div>
+                    <div class="col-2 blanco">a4</div>
+                    <div class="col-2 blanco">a5</div>
+                    <div class="col-2 blanco">a6</div>
+                    <div class="col-2 blanco">a7</div>
+                </div>
+            </div>
+        </div>
+        <!--Tercer row (Contiene el cuadrado azul, las tres columnas de en medio y el cuadrado amarillo)-->
+        <div class="row">
+            <div class="col-3 azul">a</div>
+            <div class="col-1 p-0">
+                <div class="col-12 blanco">d1</div>
+                <div class="col-12 blanco">d2</div>
+                <div class="col-12 blanco">d3</div>
+                <div class="col-12 blanco">d4</div>
+                <div class="col-12 blanco">d5</div>
+                <div class="col-12 blanco">d6</div>
+                <div class="col-12 blanco">d7</div>
+            </div>
+            <div class="col-1 p-0">
+                <div class="col-12 blanco">e1</div>
+                <div class="col-12 blanco">e2</div>
+                <div class="col-12 blanco">e3</div>
+                <div class="col-12 blanco">e4</div>
+                <div class="col-12 blanco">e5</div>
+                <div class="col-12 blanco">e6</div>
+                <div class="col-12 blanco">e7</div>
+            </div>
+            <div class="col-1 p-0">
+                <div class="col-12 blanco">f1</div>
+                <div class="col-12 blanco">f2</div>
+                <div class="col-12 blanco">f3</div>
+                <div class="col-12 blanco">f4</div>
+                <div class="col-12 blanco">f5</div>
+                <div class="col-12 blanco">f6</div>
+                <div class="col-12 blanco">f7</div>
+            </div>
+            <div class="col-3 amarillo">am</div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
