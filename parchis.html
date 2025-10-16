@@ -9,163 +9,203 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <style>
-    .rojo {
-        border: 2px black solid;
-        background-color: red;
+    .casaroja, .casaverde, .casaazul, .casaamarilla{
+        height: 315px;
+        width: 315px;
     }
-
-    .blanco {
-        border: 2px black solid;
+    .casaroja{
+        background-color: rgb(214, 71, 71);
     }
-
-    .azul {
-        border: 2px black solid;
-        background-color: blue;
+    .casaverde{
+        background-color: rgb(44, 185, 44);
     }
-
-    .amarillo {
-        border: 2px black solid;
+    .casaazul{
+        background-color: rgb(30, 122, 197);
+    }
+    .casaamarilla{
         background-color: gold;
     }
-
-    .verde {
-        border: 2px black solid;
-        background-color: green;
+    .casillahorizontal{
+        border: 1px solid;
+        width: 105px;
+        height: 45px;
     }
+    .casillavertical{
+        border: 1px solid;
+        width: 45px;
+        height: 105px;
+    }
+    .segurohorizontal{
+        border: 1px solid;
+        background-color: rgb(187, 187, 187);
+        width: 105px;
+        height: 45px;
+    }
+    .segurovertical{
+        border: 1px solid;
+        background-color: rgb(187, 187, 187);
+        width: 45px;
+        height: 105px;
+    }
+    .entradaroja, .salidaroja{
+        background-color: rgb(214, 71, 71);
+        border: 1px solid;
+        width: 105px;
+        height: 45px;
+    }
+    .entradaamarilla, .salidaamarilla{
+        background-color: gold;
+        border: 1px solid;
+        width: 105px;
+        height: 45px;
+    }
+    .entradaazul, .salidaazul{
+        background-color: rgb(30, 122, 197);
+        border: 1px solid;
+        width: 45px;
+        height: 105px;
+    }
+    .entradaverde, .salidaverde{
+        background-color: rgb(44, 185, 44);
+        border: 1px solid;
+        width: 45px;
+        height: 105px;
+    }
+    
 </style>
 
 <body>
     <div class="container">
         <!--Primer row (Contiene el cuadrado rojo, tres columnas blancas y el cuadrado verde)-->
         <div class="row">
-            <div class="col-3 rojo">r</div>
-            <div class="col-1 p-0">
-                <div class="col-12 blanco">a1</div>
-                <div class="col-12 blanco">a2</div>
-                <div class="col-12 blanco">a3</div>
-                <div class="col-12 blanco">a4</div>
-                <div class="col-12 blanco">a5</div>
-                <div class="col-12 blanco">a6</div>
-                <div class="col-12 blanco">a7</div>
+            <div class="col-3 casaroja">r</div>
+            <div class="col-1 p-0 m-0">
+                <div class="col-12 casillahorizontal">a1</div>
+                <div class="col-12 casillahorizontal">a2</div>
+                <div class="col-12 casillahorizontal">a3</div>
+                <div class="col-12 salidaroja">a4</div>
+                <div class="col-12 casillahorizontal">a5</div>
+                <div class="col-12 casillahorizontal">a6</div>
+                <div class="col-12 casillahorizontal">a7</div>
 
             </div>
-            <div class="col-1 p-0">
-                <div class="col-12 blanco">b1</div>
-                <div class="col-12 blanco">b2</div>
-                <div class="col-12 blanco">b3</div>
-                <div class="col-12 blanco">b4</div>
-                <div class="col-12 blanco">b5</div>
-                <div class="col-12 blanco">b6</div>
-                <div class="col-12 blanco">b7</div>
+            <div class="col-1 p-0 m-0">
+                <div class="col-12 segurohorizontal">b1</div>
+                <div class="col-12 entradaroja">b2</div>
+                <div class="col-12 entradaroja">b3</div>
+                <div class="col-12 entradaroja">b4</div>
+                <div class="col-12 entradaroja">b5</div>
+                <div class="col-12 entradaroja">b6</div>
+                <div class="col-12 entradaroja">b7</div>
             </div>
-            <div class="col-1 p-0">
-                <div class="col-12 blanco">c1</div>
-                <div class="col-12 blanco">c2</div>
-                <div class="col-12 blanco">c3</div>
-                <div class="col-12 blanco">c4</div>
-                <div class="col-12 blanco">c5</div>
-                <div class="col-12 blanco">c6</div>
-                <div class="col-12 blanco">c7</div>
+            <div class="col-1 p-0 m-0">
+                <div class="col-12 casillahorizontal">c1</div>
+                <div class="col-12 casillahorizontal">c2</div>
+                <div class="col-12 casillahorizontal">c3</div>
+                <div class="col-12 segurohorizontal">c4</div>
+                <div class="col-12 casillahorizontal">c5</div>
+                <div class="col-12 casillahorizontal">c6</div>
+                <div class="col-12 casillahorizontal">c7</div>
             </div>
-            <div class="col-3 verde">v</div>
+            <div class="col-3 casaverde">v</div>
         </div>
         <!--Segundo row (Contiene las tres fila de en medio del tablero)-->
         <div class="row">
             <div class="row">
                 <div class="col-3 d-flex p-0">
-                    <div class="col-2 blanco">a1</div>
-                    <div class="col-2 blanco">a2</div>
-                    <div class="col-2 blanco">a3</div>
-                    <div class="col-2 blanco">a4</div>
-                    <div class="col-2 blanco">a5</div>
-                    <div class="col-2 blanco">a6</div>
-                    <div class="col-2 blanco">a7</div>
+                    <div class= "casillavertical">a1</div>
+                    <div class= "casillavertical">a2</div>
+                    <div class= "casillavertical">a3</div>
+                    <div class= "segurovertical">a4</div>
+                    <div class= "casillavertical">a5</div>
+                    <div class= "casillavertical">a6</div>
+                    <div class= "casillavertical">a7</div>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-3 centro"></div>
                 <div class="col-3 d-flex p-0">
-                    <div class="col-2 blanco">a1</div>
-                    <div class="col-2 blanco">a2</div>
-                    <div class="col-2 blanco">a3</div>
-                    <div class="col-2 blanco">a4</div>
-                    <div class="col-2 blanco">a5</div>
-                    <div class="col-2 blanco">a6</div>
-                    <div class="col-2 blanco">a7</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 d-flex p-0">
-                    <div class="col-2 blanco">a1</div>
-                    <div class="col-2 blanco">a2</div>
-                    <div class="col-2 blanco">a3</div>
-                    <div class="col-2 blanco">a4</div>
-                    <div class="col-2 blanco">a5</div>
-                    <div class="col-2 blanco">a6</div>
-                    <div class="col-2 blanco">a7</div>
-                </div>
-                <div class="col-3"></div>
-                <div class="col-3 d-flex p-0">
-                    <div class="col-2 blanco">a1</div>
-                    <div class="col-2 blanco">a2</div>
-                    <div class="col-2 blanco">a3</div>
-                    <div class="col-2 blanco">a4</div>
-                    <div class="col-2 blanco">a5</div>
-                    <div class="col-2 blanco">a6</div>
-                    <div class="col-2 blanco">a7</div>
+                    <div class= "casillavertical">a8</div>
+                    <div class= "casillavertical">a9</div>
+                    <div class= "casillavertical">a10</div>
+                    <div class= "salidaverde">a11</div>
+                    <div class= "casillavertical">a12</div>
+                    <div class= "casillavertical">a13</div>
+                    <div class= "casillavertical">a14</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3 d-flex p-0">
-                    <div class="col-2 blanco">a1</div>
-                    <div class="col-2 blanco">a2</div>
-                    <div class="col-2 blanco">a3</div>
-                    <div class="col-2 blanco">a4</div>
-                    <div class="col-2 blanco">a5</div>
-                    <div class="col-2 blanco">a6</div>
-                    <div class="col-2 blanco">a7</div>
+                    <div class= "segurovertical">b1</div>
+                    <div class= "entradaazul">b2</div>
+                    <div class= "entradaazul">b3</div>
+                    <div class= "entradaazul">b4</div>
+                    <div class= "entradaazul">b5</div>
+                    <div class= "entradaazul">b6</div>
+                    <div class= "entradaazul">b7</div>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-3 centro"></div>
                 <div class="col-3 d-flex p-0">
-                    <div class="col-2 blanco">a1</div>
-                    <div class="col-2 blanco">a2</div>
-                    <div class="col-2 blanco">a3</div>
-                    <div class="col-2 blanco">a4</div>
-                    <div class="col-2 blanco">a5</div>
-                    <div class="col-2 blanco">a6</div>
-                    <div class="col-2 blanco">a7</div>
+                    <div class= "entradaverde">b8</div>
+                    <div class= "entradaverde">b9</div>
+                    <div class= "entradaverde">b10</div>
+                    <div class= "entradaverde">b11</div>
+                    <div class= "entradaverde">b12</div>
+                    <div class= "entradaverde">b13</div>
+                    <div class= "segurovertical">b14</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 d-flex p-0">
+                    <div class= "casillavertical">c1</div>
+                    <div class= "casillavertical">c2</div>
+                    <div class= "casillavertical">c3</div>
+                    <div class= "salidaazul">c4</div>
+                    <div class= "casillavertical">c5</div>
+                    <div class= "casillavertical">c6</div>
+                    <div class= "casillavertical">c7</div>
+                </div>
+                <div class="col-3 centro"></div>
+                <div class="col-3 d-flex p-0">
+                    <div class= "casillavertical">c8</div>
+                    <div class= "casillavertical">c9</div>
+                    <div class= "casillavertical">c10</div>
+                    <div class= "segurovertical">c11</div>
+                    <div class= "casillavertical">c12</div>
+                    <div class= "casillavertical">c13</div>
+                    <div class= "casillavertical">c14</div>
                 </div>
             </div>
         </div>
         <!--Tercer row (Contiene el cuadrado azul, las tres columnas de en medio y el cuadrado amarillo)-->
         <div class="row">
-            <div class="col-3 azul">a</div>
-            <div class="col-1 p-0">
-                <div class="col-12 blanco">d1</div>
-                <div class="col-12 blanco">d2</div>
-                <div class="col-12 blanco">d3</div>
-                <div class="col-12 blanco">d4</div>
-                <div class="col-12 blanco">d5</div>
-                <div class="col-12 blanco">d6</div>
-                <div class="col-12 blanco">d7</div>
+            <div class="col-3 casaazul">a</div>
+            <div class="col-1 p-0 m-0">
+                <div class="col-12 casillahorizontal">d1</div>
+                <div class="col-12 casillahorizontal">d2</div>
+                <div class="col-12 casillahorizontal">d3</div>
+                <div class="col-12 segurohorizontal">d4</div>
+                <div class="col-12 casillahorizontal">d5</div>
+                <div class="col-12 casillahorizontal">d6</div>
+                <div class="col-12 casillahorizontal">d7</div>
             </div>
-            <div class="col-1 p-0">
-                <div class="col-12 blanco">e1</div>
-                <div class="col-12 blanco">e2</div>
-                <div class="col-12 blanco">e3</div>
-                <div class="col-12 blanco">e4</div>
-                <div class="col-12 blanco">e5</div>
-                <div class="col-12 blanco">e6</div>
-                <div class="col-12 blanco">e7</div>
+            <div class="col-1 p-0 m-0">
+                <div class="col-12 entradaamarilla">e1</div>
+                <div class="col-12 entradaamarilla">e2</div>
+                <div class="col-12 entradaamarilla">e3</div>
+                <div class="col-12 entradaamarilla">e4</div>
+                <div class="col-12 entradaamarilla">e5</div>
+                <div class="col-12 entradaamarilla">e6</div>
+                <div class="col-12 segurohorizontal">e7</div>
             </div>
-            <div class="col-1 p-0">
-                <div class="col-12 blanco">f1</div>
-                <div class="col-12 blanco">f2</div>
-                <div class="col-12 blanco">f3</div>
-                <div class="col-12 blanco">f4</div>
-                <div class="col-12 blanco">f5</div>
-                <div class="col-12 blanco">f6</div>
-                <div class="col-12 blanco">f7</div>
+            <div class="col-1 p-0 m-0">
+                <div class="col-12 casillahorizontal">f1</div>
+                <div class="col-12 casillahorizontal">f2</div>
+                <div class="col-12 casillahorizontal">f3</div>
+                <div class="col-12 salidaamarilla">f4</div>
+                <div class="col-12 casillahorizontal">f5</div>
+                <div class="col-12 casillahorizontal">f6</div>
+                <div class="col-12 casillahorizontal">f7</div>
             </div>
-            <div class="col-3 amarillo">am</div>
+            <div class="col-3 casaamarilla">am</div>
         </div>
         </div>
     </div>
