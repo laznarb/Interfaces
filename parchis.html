@@ -4,210 +4,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parchís</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <style>
-    .casaroja, .casaverde, .casaazul, .casaamarilla{
+    .casaroja,
+    .casaverde,
+    .casaazul,
+    .casaamarilla {
         height: 315px;
-        width: 315px;
     }
-    .casaroja{
+
+    .casaroja {
         background-color: rgb(214, 71, 71);
     }
-    .casaverde{
+
+    .casaverde {
         background-color: rgb(44, 185, 44);
     }
-    .casaazul{
+
+    .casaazul {
         background-color: rgb(30, 122, 197);
     }
-    .casaamarilla{
+
+    .casaamarilla {
         background-color: gold;
     }
-    .casillahorizontal{
+
+    .casillahorizontal {
         border: 1px solid;
-        width: 105px;
         height: 45px;
     }
-    .casillavertical{
+
+    .casillavertical {
         border: 1px solid;
-        width: 45px;
+        flex: 1;
         height: 105px;
     }
-    .segurohorizontal{
+
+    .segurohorizontal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 1px solid;
         background-color: rgb(187, 187, 187);
-        width: 105px;
         height: 45px;
     }
-    .segurovertical{
+
+    .segurovertical {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 1px solid;
         background-color: rgb(187, 187, 187);
-        width: 45px;
+        flex: 1;
         height: 105px;
     }
-    .entradaroja, .salidaroja{
+
+    .salidaroja,
+    .salidaamarilla,
+    .salidaazul,
+    .salidaverde {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .entradaroja,
+    .salidaroja {
         background-color: rgb(214, 71, 71);
         border: 1px solid;
-        width: 105px;
         height: 45px;
     }
-    .entradaamarilla, .salidaamarilla{
+
+    .entradaamarilla,
+    .salidaamarilla {
         background-color: gold;
         border: 1px solid;
-        width: 105px;
         height: 45px;
     }
-    .entradaazul, .salidaazul{
+
+    .entradaazul,
+    .salidaazul {
         background-color: rgb(30, 122, 197);
         border: 1px solid;
-        width: 45px;
+        flex: 1;
         height: 105px;
     }
-    .entradaverde, .salidaverde{
+
+    .entradaverde,
+    .salidaverde {
         background-color: rgb(44, 185, 44);
         border: 1px solid;
-        width: 45px;
+        flex: 1;
         height: 105px;
     }
-    
+
+    .segurohorizontal::after,
+    .segurovertical::after,
+    .salidaroja::after,
+    .salidaamarilla::after,
+    .salidaverde::after,
+    .salidaazul::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .centro div{
+        border: 1px solid;
+        height: 52px;
+    }
+    .centro div div{
+        border: 1px solid;
+        height: 52px;
+        width: 5px;
+        margin-top: 27px;
+    }
 </style>
 
 <body>
     <div class="container">
         <!--Primer row (Contiene el cuadrado rojo, tres columnas blancas y el cuadrado verde)-->
         <div class="row">
-            <div class="col-3 casaroja">r</div>
+            <div class="col-3 casaroja"></div>
             <div class="col-1 p-0 m-0">
-                <div class="col-12 casillahorizontal">a1</div>
-                <div class="col-12 casillahorizontal">a2</div>
-                <div class="col-12 casillahorizontal">a3</div>
-                <div class="col-12 salidaroja">a4</div>
-                <div class="col-12 casillahorizontal">a5</div>
-                <div class="col-12 casillahorizontal">a6</div>
-                <div class="col-12 casillahorizontal">a7</div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 salidaroja"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
 
             </div>
             <div class="col-1 p-0 m-0">
-                <div class="col-12 segurohorizontal">b1</div>
-                <div class="col-12 entradaroja">b2</div>
-                <div class="col-12 entradaroja">b3</div>
-                <div class="col-12 entradaroja">b4</div>
-                <div class="col-12 entradaroja">b5</div>
-                <div class="col-12 entradaroja">b6</div>
-                <div class="col-12 entradaroja">b7</div>
+                <div class="col-12 segurohorizontal"></div>
+                <div class="col-12 entradaroja"></div>
+                <div class="col-12 entradaroja"></div>
+                <div class="col-12 entradaroja"></div>
+                <div class="col-12 entradaroja"></div>
+                <div class="col-12 entradaroja"></div>
+                <div class="col-12 entradaroja"></div>
             </div>
             <div class="col-1 p-0 m-0">
-                <div class="col-12 casillahorizontal">c1</div>
-                <div class="col-12 casillahorizontal">c2</div>
-                <div class="col-12 casillahorizontal">c3</div>
-                <div class="col-12 segurohorizontal">c4</div>
-                <div class="col-12 casillahorizontal">c5</div>
-                <div class="col-12 casillahorizontal">c6</div>
-                <div class="col-12 casillahorizontal">c7</div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 segurohorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
             </div>
-            <div class="col-3 casaverde">v</div>
+            <div class="col-3 casaverde"></div>
         </div>
         <!--Segundo row (Contiene las tres fila de en medio del tablero)-->
         <div class="row">
-            <div class="row">
-                <div class="col-3 d-flex p-0">
-                    <div class= "casillavertical">a1</div>
-                    <div class= "casillavertical">a2</div>
-                    <div class= "casillavertical">a3</div>
-                    <div class= "segurovertical">a4</div>
-                    <div class= "casillavertical">a5</div>
-                    <div class= "casillavertical">a6</div>
-                    <div class= "casillavertical">a7</div>
-                </div>
-                <div class="col-3 centro"></div>
-                <div class="col-3 d-flex p-0">
-                    <div class= "casillavertical">a8</div>
-                    <div class= "casillavertical">a9</div>
-                    <div class= "casillavertical">a10</div>
-                    <div class= "salidaverde">a11</div>
-                    <div class= "casillavertical">a12</div>
-                    <div class= "casillavertical">a13</div>
-                    <div class= "casillavertical">a14</div>
-                </div>
+            <div class="col-3 d-flex p-0">
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="segurovertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
             </div>
-            <div class="row">
-                <div class="col-3 d-flex p-0">
-                    <div class= "segurovertical">b1</div>
-                    <div class= "entradaazul">b2</div>
-                    <div class= "entradaazul">b3</div>
-                    <div class= "entradaazul">b4</div>
-                    <div class= "entradaazul">b5</div>
-                    <div class= "entradaazul">b6</div>
-                    <div class= "entradaazul">b7</div>
-                </div>
-                <div class="col-3 centro"></div>
-                <div class="col-3 d-flex p-0">
-                    <div class= "entradaverde">b8</div>
-                    <div class= "entradaverde">b9</div>
-                    <div class= "entradaverde">b10</div>
-                    <div class= "entradaverde">b11</div>
-                    <div class= "entradaverde">b12</div>
-                    <div class= "entradaverde">b13</div>
-                    <div class= "segurovertical">b14</div>
-                </div>
+            <div class="col-3 d-flex p-0 centro">
+                
             </div>
-            <div class="row">
-                <div class="col-3 d-flex p-0">
-                    <div class= "casillavertical">c1</div>
-                    <div class= "casillavertical">c2</div>
-                    <div class= "casillavertical">c3</div>
-                    <div class= "salidaazul">c4</div>
-                    <div class= "casillavertical">c5</div>
-                    <div class= "casillavertical">c6</div>
-                    <div class= "casillavertical">c7</div>
-                </div>
-                <div class="col-3 centro"></div>
-                <div class="col-3 d-flex p-0">
-                    <div class= "casillavertical">c8</div>
-                    <div class= "casillavertical">c9</div>
-                    <div class= "casillavertical">c10</div>
-                    <div class= "segurovertical">c11</div>
-                    <div class= "casillavertical">c12</div>
-                    <div class= "casillavertical">c13</div>
-                    <div class= "casillavertical">c14</div>
-                </div>
+            <div class="col-3 d-flex p-0">
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="salidaverde"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 d-flex p-0">
+                <div class="segurovertical"></div>
+                <div class="entradaazul"></div>
+                <div class="entradaazul"></div>
+                <div class="entradaazul"></div>
+                <div class="entradaazul"></div>
+                <div class="entradaazul"></div>
+                <div class="entradaazul"></div>
+            </div>
+            <div class="col-3 d-flex p-0 centro">
+                
+            </div>
+            <div class="col-3 d-flex p-0">
+                <div class="entradaverde"></div>
+                <div class="entradaverde"></div>
+                <div class="entradaverde"></div>
+                <div class="entradaverde"></div>
+                <div class="entradaverde"></div>
+                <div class="entradaverde"></div>
+                <div class="segurovertical"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 d-flex p-0">
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="salidaazul"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+            </div>
+            <div class="col-3 d-flex p-0 centro">
+            
+            </div>
+            <div class="col-3 d-flex p-0">
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="segurovertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
+                <div class="casillavertical"></div>
             </div>
         </div>
         <!--Tercer row (Contiene el cuadrado azul, las tres columnas de en medio y el cuadrado amarillo)-->
         <div class="row">
-            <div class="col-3 casaazul">a</div>
+            <div class="col-3 casaazul"></div>
             <div class="col-1 p-0 m-0">
-                <div class="col-12 casillahorizontal">d1</div>
-                <div class="col-12 casillahorizontal">d2</div>
-                <div class="col-12 casillahorizontal">d3</div>
-                <div class="col-12 segurohorizontal">d4</div>
-                <div class="col-12 casillahorizontal">d5</div>
-                <div class="col-12 casillahorizontal">d6</div>
-                <div class="col-12 casillahorizontal">d7</div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 segurohorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
             </div>
             <div class="col-1 p-0 m-0">
-                <div class="col-12 entradaamarilla">e1</div>
-                <div class="col-12 entradaamarilla">e2</div>
-                <div class="col-12 entradaamarilla">e3</div>
-                <div class="col-12 entradaamarilla">e4</div>
-                <div class="col-12 entradaamarilla">e5</div>
-                <div class="col-12 entradaamarilla">e6</div>
-                <div class="col-12 segurohorizontal">e7</div>
+                <div class="col-12 entradaamarilla"></div>
+                <div class="col-12 entradaamarilla"></div>
+                <div class="col-12 entradaamarilla"></div>
+                <div class="col-12 entradaamarilla"></div>
+                <div class="col-12 entradaamarilla"></div>
+                <div class="col-12 entradaamarilla"></div>
+                <div class="col-12 segurohorizontal"></div>
             </div>
             <div class="col-1 p-0 m-0">
-                <div class="col-12 casillahorizontal">f1</div>
-                <div class="col-12 casillahorizontal">f2</div>
-                <div class="col-12 casillahorizontal">f3</div>
-                <div class="col-12 salidaamarilla">f4</div>
-                <div class="col-12 casillahorizontal">f5</div>
-                <div class="col-12 casillahorizontal">f6</div>
-                <div class="col-12 casillahorizontal">f7</div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 salidaamarilla"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
+                <div class="col-12 casillahorizontal"></div>
             </div>
-            <div class="col-3 casaamarilla">am</div>
+            <div class="col-3 casaamarilla"></div>
         </div>
-        </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
